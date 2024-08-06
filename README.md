@@ -7,7 +7,6 @@ A modern and responsive dashboard UI built with React.js.
 Follow these steps to set up the project locally.
 
 1. **Clone the repository**:
-   ```bash
    git clone https://github.com/your-username/dashboard-ui.git
    cd dashboard-ui
 
