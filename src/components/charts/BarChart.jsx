@@ -8,9 +8,17 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart = ({ data, options }) => {
   const { isMiniDesktop, isTablet, isMobile } = useContext(DeviceTypeContext);
-  const height = isMiniDesktop || isTablet ? 110 : isMobile ? 170 : 80;
 
-  return <Bar data={data} options={options} height={height} />;
+  let chartClassName = 'chart-default';
+  if (isMiniDesktop) chartClassName = 'chart-mini-desktop';
+  else if (isTablet) chartClassName = 'chart-tablet';
+  else if (isMobile) chartClassName = 'chart-mobile';
+
+  return (
+    <div className={`chart-container ${chartClassName}`}>
+      <Bar data={data} options={{ ...options, responsive: true, maintainAspectRatio: false }} />
+    </div>
+  );
 };
 
 export default BarChart;

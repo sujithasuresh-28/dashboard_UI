@@ -35,3 +35,24 @@ body {
     border-radius: 10px;
   }
 }
+
+.chart-container {
+  width: 100%;
+  position: relative;
+}
+
+.chart-default {
+  height: 200px;
+}
+
+.chart-mini-desktop {
+  height: 180px;
+}
+
+.chart-tablet {
+  height: 200px;
+}
+
+.chart-mobile {
+  height: 200px;
+}
