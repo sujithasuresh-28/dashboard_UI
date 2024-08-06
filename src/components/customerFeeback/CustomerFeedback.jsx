@@ -20,7 +20,7 @@ const CustomerFeedback = () => {
                         },
                     }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-                            <Icon sx={{ width: isMobile ? '34px' : '38px', height: isMobile ? '34px' : '38px', mr: 1 }}><img width={isMobile ? '34px' : '38px'} height={isMobile ? '34px' : '38px'} src={customer.icon} /></Icon>
+                            <Icon sx={{ width: isMobile ? '34px' : '38px', height: isMobile ? '34px' : '38px', mr: 1 }}><img alt={customer.name} width={isMobile ? '34px' : '38px'} height={isMobile ? '34px' : '38px'} src={customer.icon} /></Icon>
                             <Typography variant='h6' sx={{ ...(isMobile && { fontSize: '17px' }) }}>{customer.name}</Typography>
                         </Box>
                         <Rating

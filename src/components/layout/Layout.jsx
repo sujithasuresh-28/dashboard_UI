@@ -32,7 +32,7 @@ function Layout() {
                     </IconButton>
                 )}
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Icon sx={{ width: '40px', height: '40px', ...(isMobile && { ml: '-7px' }) }}><img src={logo} /></Icon>
+                    <Icon sx={{ width: '40px', height: '40px', ...(isMobile && { ml: '-7px' }) }}><img src={logo} alt="logo" /></Icon>
                     <OutlinedInput
                         id="search-input"
                         startAdornment={
@@ -53,7 +53,7 @@ function Layout() {
                         <MenuDrawer isMobile={isMobile} />
                     </>
                 ) : (
-                    <Icon sx={{ ml: 1, width: '50px', height: '45px' }}><img src={avatar} /></Icon>
+                    <Icon sx={{ ml: 1, width: '50px', height: '45px' }}><img src={avatar} alt="avatar" /></Icon>
                 )}
             </Toolbar>
             {isMobile && (

@@ -21,7 +21,7 @@ const RecentOrders = () => {
                                 <TableRow key={row.name}>
                                     <TableCell sx={{ ...(index === recentOrdersTableBody?.length - 1 && { borderBottom: 'none' }), ...(isMobile && { fontSize: '15px', width: '170px' }) }}>
                                         <Box sx={{ display: 'flex', alignItems: 'center', ...(isMobile && { width: '170px' }) }}>
-                                            <Icon sx={{ width: isMobile ? '30px' : '35px', height: isMobile ? '30px' : '35px', mr: 1 }}><img width={isMobile ? '30px' : '35px'} height={isMobile ? '30px' : '35px'} src={row.img} /></Icon>
+                                            <Icon sx={{ width: isMobile ? '30px' : '35px', height: isMobile ? '30px' : '35px', mr: 1 }}><img alt={row.name} width={isMobile ? '30px' : '35px'} height={isMobile ? '30px' : '35px'} src={row.img} /></Icon>
                                             {row.name}
                                         </Box>
                                     </TableCell>

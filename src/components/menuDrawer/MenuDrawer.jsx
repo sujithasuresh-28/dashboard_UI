@@ -13,17 +13,17 @@ const MenuDrawer = ({ type, isMobile }) => {
                             <List sx={{ display: 'flex', flexDirection: 'column', rowGap: '10px' }}>
                                 {menuItems.map(({ id, icon, active }) => (
                                     <ListItem key={id} sx={{ ...(active ? { borderLeft: '3px solid #7294ff' } : { ml: '3px' }) }}>
-                                        <ListItemIcon sx={{ width: '30px', height: '30px', minWidth: '40px !important' }}><img src={icon} /></ListItemIcon>
+                                        <ListItemIcon sx={{ width: '30px', height: '30px', minWidth: '40px !important' }}><img src={icon} alt="id" /></ListItemIcon>
                                     </ListItem>
                                 ))}
                             </List>
-                            <Icon sx={{ ml: '15px', width: '30px', height: '30px', minWidth: '40px !important' }}><img src={logout} /></Icon>
+                            <Icon sx={{ ml: '15px', width: '30px', height: '30px', minWidth: '40px !important' }}><img src={logout} alt="logout" /></Icon>
                         </Box>
                     ) : (
                         <List sx={{ display: 'flex', flexDirection: 'row', rowGap: '5px' }}>
                             {topNavItems.map(({ id, icon }) => (
                                 <ListItem key={id} sx={{ padding: '0px !important' }}>
-                                    <ListItemIcon sx={{ width: '30px', height: '40px' }}><img src={icon} /></ListItemIcon>
+                                    <ListItemIcon sx={{ width: '30px', height: '40px' }}><img src={icon} alt={id} /></ListItemIcon>
                                 </ListItem>
                             ))}
                         </List>
@@ -35,7 +35,7 @@ const MenuDrawer = ({ type, isMobile }) => {
                     <List sx={{ display: 'flex', flexDirection: 'column', rowGap: '10px' }}>
                         {menuItems.map(({ id, icon, active }) => (
                             <ListItem key={id} sx={{ ...(active ? { borderLeft: '3px solid #7294ff' } : { ml: '3px' }) }}>
-                                <ListItemIcon sx={{ width: '30px', height: '30px' }}><img src={icon} /></ListItemIcon>
+                                <ListItemIcon sx={{ width: '30px', height: '30px' }}><img src={icon} alt={id} /></ListItemIcon>
                             </ListItem>
                         ))}
                     </List>
@@ -44,13 +44,13 @@ const MenuDrawer = ({ type, isMobile }) => {
                             if (index !== topNavItems.length - 1) {
                                 return (
                                     <ListItem key={id} sx={{ padding: '0px !important', ml: '10px' }}>
-                                        <ListItemIcon sx={{ width: '30px', height: '40px' }}><img src={icon} /></ListItemIcon>
+                                        <ListItemIcon sx={{ width: '30px', height: '40px' }}><img src={icon} alt={id} /></ListItemIcon>
                                     </ListItem>
                                 )
-                            }
+                            } return null;
                         })}
                     </List>
-                    <Icon sx={{ ml: '15px', mt: '10px', width: '30px', height: '30px', minWidth: '40px !important' }}><img src={logout} /></Icon>
+                    <Icon sx={{ ml: '15px', mt: '10px', width: '30px', height: '30px', minWidth: '40px !important' }}><img src={logout} alt="logout" /></Icon>
                 </>
             )}
         </Box>

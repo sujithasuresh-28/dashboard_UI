@@ -22,7 +22,7 @@ function Dashboard() {
                 </Box>
             )}
             <Box component="main" sx={{ flexGrow: 1, p: isMobile ? 2 : 3, width: { xs: `calc(100% - 70px)` }, mt: 8, ml: isMobile ? 0 : 9 }}>
-                <Typography variant="h4" component="h2" sx={{ mt: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mt: 1,fontWeight: 'bold' }}>
                     Dashboard
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: (isMobile || isTablet) ? 'column' : 'row', columnGap: isMiniDesktop ? '20px' : '40px' }} sm={{ flexDirection: 'column' }}>

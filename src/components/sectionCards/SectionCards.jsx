@@ -12,7 +12,7 @@ const SectionCards = () => {
                 <Card sx={{ backgroundColor: '#121212', color: '#fff', borderRadius: 2, p: isDesktop ? '5px !important' : isTablet ? '10px 5px !important' : '0px !important', width: (isMobile || isTablet) ? '45%' : '25%', display: 'flex', flexDirection: 'column', boxSizing: 'border-box', ...((isMiniDesktop || isMobile) && { justifyContent: isMobile ? 'space-between' : 'center' }) }}>
                     <CardContent sx={{ pb: '7px !important', display: 'flex', justifyContent: 'space-between', alignItems: 'space-between', flexDirection: 'column', width: '100%', ...(isMiniDesktop && { p: '8px !important' }) }}>
                         <Box sx={{ display: 'flex', flexDirection: 'column', mb: 1 }}>
-                            <Icon sx={{ width: '52px', height: '45px', mb: 1 }}><img src={card?.icon} /></Icon>
+                            <Icon sx={{ width: '52px', height: '45px', mb: 1 }}><img alt={card.name} src={card?.icon} /></Icon>
                             <Typography variant="subtitle2" sx={{ ...(isMobile && { fontSize: '13px' }) }}>
                                 {card?.name}
                             </Typography>
