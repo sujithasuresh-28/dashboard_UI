@@ -6,15 +6,11 @@ A modern and responsive dashboard UI built with React.js.
 
 Follow these steps to set up the project locally.
 
-1. **Clone the repository**:
-   a. git clone https://github.com/your-username/dashboard-ui.git
-   b. cd dashboard-ui
+1. **Clone the repository**:  git clone https://github.com/your-username/dashboard-ui.git  and  cd dashboard-ui
 
-2. **Install dependencies**:
-   npm install
+2. **Install dependencies**:  npm install
 
-3. **Start the development server**:
-   npm start
+3. **Start the development server**:   npm start
 
 Your React application should now be running on http://localhost:3000.
 
